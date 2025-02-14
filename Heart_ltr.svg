@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="56.834652mm"
+   height="46.536701mm"
+   viewBox="0 0 56.834652 46.536701"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-127.70674,-23.518907)">
+    <g
+       id="g13"
+       transform="rotate(42.617092,314.89327,65.996373)">
+      <path
+         d="m 189.1918,128.47951 c -6.5816,0 -11.8799,5.29882 -11.8799,11.88041 v 10.67067 l 24.32151,-0.0134 v -10.65723 c 0,-6.58159 -5.29882,-11.88041 -11.88041,-11.88041 z"
+         style="fill:#e5989b;stroke:#e5989b;stroke-width:0.4;stroke-linecap:round;stroke-opacity:1;paint-order:markers stroke fill"
+         id="path11" />
+      <path
+         d="m 177.3119,175.35211 v -24.32152 l -10.67066,0.006 c -6.5816,0.004 -11.87723,5.3045 -11.8737,11.88609 v 0.56121 c 0.004,6.58159 5.30502,11.87774 11.88661,11.87421 z"
+         style="fill:#e5989b;stroke:#e5989b;stroke-width:0.4;stroke-linecap:round;stroke-opacity:1;paint-order:markers stroke fill"
+         id="path13" />
+      <path
+         d="m 201.63341,151.01715 -24.32151,0.0134 v 24.32152 l 24.32151,-0.0134 z"
+         style="fill:#e5989b;stroke:#e5989b;stroke-width:0.4;stroke-linecap:round;stroke-opacity:1;paint-order:markers stroke fill"
+         id="path12" />
+    </g>
+  </g>
+</svg>

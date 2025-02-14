@@ -1,0 +1,387 @@
+body{
+    background-color: #FFCDB2;
+}
+
+
+#letter{
+    position: relative;
+    left: 40%;
+    width: 100px;
+    z-index: 1;
+    margin-top: 10%;
+
+
+}
+
+#ltrfirst{
+    position: absolute;
+    left: 60.4px;
+    top: 70px;
+
+}
+
+#bot{
+    position: absolute;
+    left: 0px;
+    top: 105px;
+}
+
+
+#heart {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin: 50px;
+    rotate: -90deg;
+    left: 590px;
+    bottom: 430px;
+    z-index: 10;
+    scale: .4;
+    cursor: pointer;
+    box-shadow: 10px 5px 400px 200px rgba(255,0,0,0.88);
+    -webkit-box-shadow: 10px 5px 400px 200px rgba(255,0,0,0.88);
+    -moz-box-shadow: 10px 5px 400px 200px rgba(255,0,0,0.88);
+
+}
+
+#heart:before, #heart:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#heart:before {
+    left: 50px;
+    top: 0;
+}
+
+#heart:after {
+    left: 0;
+    top: 50px;
+}
+
+#newLtr{
+    position: absolute;
+    left: 0px;
+    margin-top: 40px;
+    
+    
+    animation: ltrgrow 1.5s ease-in-out forwards;
+    transition: transform 1s ease-in-out; 
+
+}
+
+@keyframes ltrgrow {
+    0%   {left: 60.4px; top: 70px;}
+
+    50%  {left: 55.2px; top: 85px;}
+    100% { left: 50px; top: 100px; }
+}
+
+#ltrproper{
+    position: fixed;
+    left: 32%;
+    top: 105px;
+    width: 455px;
+    z-index: 100;
+    font-family: "Courier New";
+    font-size: 13px;
+    
+}
+
+
+
+#clickfirst, #herefirst{
+    display: none;
+    position: relative;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+#herefirst{
+    color: red;
+    cursor: pointer;
+}
+
+#clickcover{
+    position: fixed;
+    left: calc(46% + 180px);
+    top: 87%;
+    z-index: 1000;
+}
+
+
+#askcover{
+    position: fixed;
+    left: 28%;
+    top: 100px;
+
+
+
+}
+
+#ask{
+    margin-bottom: 90px;
+    font-size: 60px;
+    font-family: Roboto;
+}
+
+#askyes{
+    background-color:green;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Roboto;
+	font-size:21px;
+	font-weight:bold;
+	padding:8px 19px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+    border: none;
+    position: fixed;
+    left: 41% !important;
+
+}
+
+#askno{
+    position: fixed;
+    background-color:#e4685d;
+    border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Roboto;
+	font-size:21px;
+	font-weight:bold;
+	padding:8px 19px;
+    text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+    border: none;
+    left: 50% !important;
+}
+
+#askyes, #askno{
+    display: none;
+    margin-bottom: 50%;
+    height: 70px;
+    width: 100px;
+    color: black;
+}
+
+#askyes:active,#askno:active{
+    margin-top: 1px;
+}
+
+#ask{
+    display: block;
+    margin-bottom: 100px;
+    margin-top: 10%;
+}
+
+#hehe{
+    display: none;
+    font-size: 6em;
+    position: fixed;
+    left: 20%;
+    top: 8%;
+}
+
+#gif{
+    display: none;
+    position: fixed;
+    left: 37%;
+    height: 40%;
+    width: 25%;
+    top: 35%;
+}
+
+#right{
+    display: none;
+    font-size: smaller;
+    position: fixed;
+    top: 80%;
+    left: 47%;
+    cursor: pointer;
+}
+
+.input {
+	font-size: 14px;
+	padding: 6px 10px;
+	width: 150px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #C4D1EB;
+	border-radius: 20px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .6s ease;
+}
+
+.input:focus {
+	background: #ff494948;
+	border: 1px solid #ff0000;
+	border-radius: 5px;
+}
+
+.muquestions{
+    font-size: x-small;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+#whoa{
+    font-size: 50px;
+    font-family: Roboto;
+    position: fixed;
+    left: 35%;
+    top: 40px;
+    display: none;
+
+}
+
+#so{
+    display: none;
+    font-size: 15px;
+    font-family: Roboto;
+    position: fixed;
+    left: 47%;
+    top: 125px;
+}
+
+.submit{
+	background-color:#c62d1f;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 14px;
+	text-decoration:none;
+}
+
+.submit:hover{
+    background-color: #FFCDB2;
+    border-color: white;
+    color: black;
+}
+
+.coveringdamu{
+    position: fixed;
+    top: 180px;
+    left: 250px;
+    display: none;
+}
+
+#secondmu{
+    top: 240px;
+}
+
+#thirdmu{
+    top: 320px;
+}
+
+#fourthmu{
+    top: 420px;
+}
+
+#fifthmu{
+    top: 520px;
+}
+
+#sixthmu{
+    top: 580px;
+}
+
+.coveringdamu2{
+    position: fixed;
+    display: none;
+    left: 800px;
+}
+
+#seventhmu{
+    position: fixed;
+    top: 200px;
+}
+
+#eighthmu{
+    position: fixed;
+}
+
+#ninthhmu{
+    top: 320px;
+}
+
+.bunny{
+    z-index: 100000000;
+    display: span;
+    margin-top: -20px;
+}
+
+#musoproperaskingcover > span{
+    position: relative;
+    display: none;
+    margin-right: 12px;
+    font-size: 24px;
+    top: 500px;
+    left: 700px;
+    z-index: 10000000000000;
+}
+
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    display: none;
+}
+
+#muno{
+    background-color: red;
+    scale: 0.4;
+    position: fixed;
+    left: 69%;
+    top: 87%;
+}
+
+#muyes{
+    scale: 2;
+    position: fixed;
+    top: 86%;
+    left: 60%;
+}
+
+#aurki{
+    width: 450px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#lollist{
+    position: relative;
+    top: 200px;
+    left: 10px;
+    font-size: smaller;
+}
+
+#list{
+    display: none;
+}
+
+

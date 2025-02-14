@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lol.css">
+</head>
+<body>
+    <div id="heart" onclick="Ltrdown()"></div>
+
+    <div id="letter">
+        <img src="full_ltr.svg" id="ltrfull">
+        <img src="rect1.svg" onclick="ltr()" id="ltrfirst">
+        <img src="bot_ltr.svg" id="bot">
+    </div>
+    <div id="propercover">
+        <div id="ltrproper"></div>
+    </div>
+    <div id="clickcover">
+        <p id="clickfirst">Click <span id="herefirst" onclick="erasefirst()">Here</span></p>
+    </div>
+    <div id="askcover">
+        <div id="ask"></div>
+        <br>
+        <button id="askyes" onclick="teehee()">Yes</button>
+        <button id="askno" onclick="askyes()">No</button>
+    </div>
+    <div id="teeheecover">
+        <h1 id="hehe">HEHE U LOVE ME</h1>
+        <img src="mochi.gif" alt="" id="gif">
+        <h4 id="right" onclick="erasethird()">U love me right?</h4>
+    </div>
+    <div id="mucover">
+        <h1 id="whoa">WHOAAA U DO????</h1>
+        <h2 id="so">saur layk...</h2>
+        
+        <div id="questioncover">
+            <div id="firstmu" class="coveringdamu">
+                <p class="muquestions">What's ur last name?</p>
+                <input type="text" class="input" id="input10">
+                <button class="submit" onclick='replace("input10", "Canlas")'>Submit</button>
+            </div>
+
+            <div id="secondmu" class="coveringdamu">
+                <p class="muquestions">What's ur first dog's name?</p>
+                <input type="text" class="input" id="input9">
+                <button class="submit" onclick='replace("input9", "Astrud")'>Submit</button>
+            </div>
+
+            <div id="thirdmu" class="coveringdamu">
+                <p class="muquestions">What's a nickname we call each other?</p>
+                <input type="text" class="input" id="input8">
+                <button class="submit" onclick='replace("input8", "Niglet")'>Submit</button>
+            </div>
+
+            <div id="fourthmu" class="coveringdamu">
+                <p class="muquestions">whaz one of da first nicknames u gave me?</p>
+                <input type="text" class="input" id="input7">
+                <button class="submit" onclick='replace("input7", "Silly Goose")'>Submit</button>
+            </div>
+
+            <div id="fifthmu" class="coveringdamu">
+                <p class="muquestions">U cry a lot so you ___</p>
+                <input type="text" class="input" id="input6">
+                <button class="submit" onclick='replace("input6", "Sob")'>Submit</button>
+            </div>
+
+            <div id="sixthmu" class="coveringdamu">
+                <p class="muquestions">Code word we use a lot</p>
+                <input type="text" class="input" id="input5">
+                <button class="submit" onclick='replace("input5", "Eme")'>Submit</button>
+            </div>
+
+            <div id="seventhmu" class="coveringdamu2">
+                <p class="muquestions">_________ girl?</p>
+                <input type="text" class="input" id="input4">
+                <button class="submit" onclick='replace("input4", "Beautiful")'>Submit</button>
+            </div>
+
+            <div id="eighthmu" class="coveringdamu2" style="top: 240px;">
+                <p class="muquestions">something we say a lot</p>
+                <input type="text" id="input3" class="input">
+                <button class="submit" onclick='replace("input3", "Sorry")'>Submit</button>
+            </div>
+
+            <div id="ninthhmu" class="coveringdamu2" style="top: 340px;">
+                <p class="muquestions">Happy mother's day sa _______</p>
+                <input type="text" class="input" id="input2">
+                <button id="ninth"class="submit" onclick='replace("input2", "Mamamo")'>Submit</button>
+            </div>
+
+            <div id="tenthmu" class="coveringdamu2" style="top: 400px;">
+                <p class="muquestions">I _____</p>
+                <input type="text" id="input1" class="input">
+                <button id="tenth"class="submit" onclick="erasefourth()"">Submit</button>
+                
+            </div> 
+
+            
+        </div>
+        
+
+ 
+
+ 
+ 
+    </div>
+    <div id="musoproperaskingcover">
+        <span id="Canlas">Canlas</span>
+        <span id="Astrud">Astrud</span>
+        <span id="Niglet">Niglet</span>
+        <span id="Silly Goose">Silly Goose</span>
+        <span id="Sob">Sob</span>
+        <span id="Eme">Eme</span>
+        <br>
+        <span id="Beautiful">Beautiful</span>
+        <span id="Sorry">Sorry</span>
+        <span id="Mamamo">Mamamo</span>
+        <span id="Labyu">Labyu</span>
+
+        <button class="myButton" id="muyes" onclick="erasefifthlol()">yes</button>
+        <button class="myButton" id="muno">no</button>
+    </div>
+
+    <div id="list">
+        <h1 id="aurki">AURKI TEEHEE, I'm so lucky to be da person u love baby, I love you so much. I will always love, I love how na ur...</h1>
+        <li id="lollist"></li>
+        <div id="giflist"></div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        function listing(){
+            document.body.style.height = "1000px";
+            document.getElementById("list").style.display = "inline"
+            const items = [
+                "So understanding - tenks for always listening to me bb",
+                "Plans align with mine - thanks for not being selfish and allowing me to go to a career na might reduce my time wid family",
+                "So strong wid ur moral compass - I love u morals bb",
+                "So lively - ull never bore me, i promise",
+                "So energetic - be high wid me always bb",
+                "So vibey - I love talking to u",
+                "So high",
+                "Funny",
+                "https://sendthesong.xyz/details/67aea0e01fc54584f65823db",
+                "Humor",
+                "Way of thinking - im always fascinated on how u process things bb",
+                "Kindness",
+                "Energy",
+                "Openness to me - tell me everything bb, i want VIP viewing",
+                "Honesty - Please baby, tell the truth to me always",
+                "Comfiness",
+                "Possessiveness - show everyone im urs",
+                "Way of being demanding - i love na u demand for me",
+                "https://sendthesong.xyz/details/67aea2451fc54584f6582417",
+                "Selosa",
+                "Hypersensitivity",
+                "Open-mindedness - cuz we can debate and talk about things if theyre right or wrong",
+                "Playful tampos - ur so cute when u tampo, sorry i laugh sometimes, u look so cute when u tampo",
+                "Tampos - i lab how u manifest ur hurt bb and not just keep it to urself. Pls tell me any icks or turn offs",
+                "Way na u cant get mad at me - i cant stay mad at u too bb, its nice dat u feel da same",
+                "Support me - thanks for always supporting me baby but remember that im ur number one fan, always",
+                "Showing different manifrstations of ur love - tenks bb, i love u so much, im sorry i cant do it sometimes",
+                "Make me feel secure - thanks for always giving me affection bb, u make me feel secure na u love me, just dont be touchy wid other people",
+                "Freakiness - thanks for showing me na ur comfy wid me my pretty girl",
+                "Gutsiness - if it werent for ur gutsiness, i wouldnt be writing dis rn, thanks for giving me a chance to love u",
+                "Kulitness",
+                "https://sendthesong.xyz/details/67aea35e1fc54584f658244f",
+                "Saying everything u want - thanks for giving me vip viewing to ur life yvaine",
+                "Flustered - it gives me reassurance hehe",
+                "U stayed wid me kahit na its hard for u, thank yiu for being here my love, thabk you for staying wid me",
+                "U broje my aro - i didnt want a wife before and bb u broke that and I have no regrets",
+                "Motivsting - u always try to make me do good bb",
+                "https://sendthesong.xyz/details/67aea3cd1fc54584f6582463",
+                "Always giving me advice - all of ur words r needed by me baby, idc if its stupid or irrelevant or unwise, give me advice, no advice is unwanted",
+                "Not ashamed to show me - thanks for making me feel special bb",
+                "Yapper - I love na u yap to me baby, just go and yap to me everyday",
+                "Makes me think emotionally - thanks for making me knowledegeablt about how people would feel baby",
+                "Makes decisions for me - thanks for being decisive for me sometimes bb",
+                "Here are my  nicknames for u:",
+                "https://sendthesong.xyz/details/67aeb01d1fc54584f6582655",
+                "Ur so pretty",
+                "Ur so cute",
+                "ur so adorable",
+                "ur so beautiful",
+                "ur hair is so nice",
+                "ur eyes r so pretty",
+                "ur pretty",
+                "Communication - I love our communication darling, please, let's talk about everything aurki?",
+                "ur so gorgeous",
+                "https://sendthesong.xyz/details/67aeb6ee1fc54584f6582757",
+                "I will never stop loving u I promise",
+                "Happy Valentine's day my love",
+                "I love you forever and always yvaine",
+                "https://powerful-beepboopblep.github.io/thirdyvaine-vday_supportingimage/",
+                "list end, if u want it agen here it is: "];
+            let index = 0;
+
+            function addwindow(){
+                let windowheight = window.innerHeight
+                document.body.style.height = windowheight + 1000 + "px"
+            }
+
+            function addItem() {
+                if (index < items.length) {
+            let li = document.createElement('li');
+            li.textContent = items[index];
+
+            document.getElementById('lollist').appendChild(li);
+            if (window.innerHeight == 999){
+                addwindow()
+            }
+
+            index++;
+            } else{
+                index = 0;
+                addItem()
+            }
+            }
+
+        setInterval(addItem, 2000);
+        }
+
+        function erasefifthlol(){
+            document.getElementById("musoproperaskingcover").style.display = "none";
+            listing();
+        }
+
+        function removetwo(){
+            let newwords = {
+                "Canlas": "C     ",
+                "Astrud": "A     ",
+                "Niglet": "N     ",
+                "Silly Goose": " I         ",
+                "Sob": "  B",
+                "Eme": "  E",
+                "Beautiful": "   U     ",
+                "Sorry": "   R ",
+                "Mamamo": "    M ",
+                "Labyu": "    U"
+            };
+            
+
+            for (let id in newwords){
+                let element = document.getElementById(id);
+                if (element){
+                    element.innerText = newwords[id]
+                }
+            }
+
+            document.getElementById("muno").style.display = "inline"
+            document.getElementById("muyes").style.display = "inline"
+        }
+
+        function removeletters(){
+            let words = {
+                "Canlas": "Canlas",
+                "Astrud": "Astrud",
+                "Niglet": "Niglet",
+                "Silly Goose": "sIlly goose",
+                "Sob": "soB",
+                "Eme": "emE",
+                "Beautiful": "beaUtiful",
+                "Sorry": "sorRy",
+                "Mamamo": "mamaMo",
+                "Labyu": "labyU"
+            }
+
+            for (let id in words){
+                let element = document.getElementById(id);
+                if (element){
+                    element.innerText = words[id]
+                }
+            }
+
+            setTimeout(removetwo,2000)   
+        }
+
+        function erasefourth(){
+            document.getElementById("Labyu").style.display = "inline";
+            let index = 0;
+            let elementstohidefirst = ["mucover", "teeheecover", "askcover", "clickcover", "propercover", "letter", "heart"];
+            
+            function hide(){
+                if (index < elementstohidefirst.length){
+                    let element = document.getElementById(elementstohidefirst[index]);
+                    if (element){
+                        element.style.display = "none";
+                        document.getElementById("musoproperaskingcover").style.display = "inline"
+                    } else{
+                        askingvday();
+                    }
+                    index++
+                    setTimeout(hide, 1000);
+                }
+            }
+            hide()
+            removeletters()
+        }
+
+
+        function replace(id, answer){
+            let input = document.getElementById(id);
+            let guess = input.value.trim();
+
+            if(String(guess) == String(answer)){
+                daoneinquestion = document.getElementById(answer);
+                daoneinquestion.style.display = "inline"
+                input.disabled = true
+
+            } else{
+                window.alert("WRONGGGGGG")
+            }
+        }
+
+        function innerinput(submit, answer){
+            let element = document.getElementById(submit);
+            let poselement = element.getBoundingClientRect();
+            let other = document.getElementById(answer);
+        }
+
+        function erasethird(){
+            let index = 0;
+            let elementstohidefirst = ["teeheecover", "askcover", "clickcover", "propercover", "letter", "heart"];
+            
+            function hide(){
+                if (index < elementstohidefirst.length){
+                    let element = document.getElementById(elementstohidefirst[index]);
+                    if (element){
+                        element.style.display = "none";
+                    } else{
+                        askingvday();
+                    }
+                    index++
+                    setTimeout(hide, 1000);
+                }
+            }
+            hide()
+
+            let firstclass = document.getElementsByClassName("coveringdamu");
+            let secondclass = document.getElementsByClassName("coveringdamu2");
+
+            document.getElementById("whoa").style.display = "inline"
+            document.getElementById("so").style.display = "inline"
+            for (let i = 0; i < firstclass.length; i++){
+                firstclass[i].style.display = "inline"
+            }
+
+            for (let i = 0; i < secondclass.length; i++){
+                secondclass[i].style.display = "inline"
+            }
+        }
+
+        function teehee(){
+            erasesecond();
+            let hehe = document.getElementById("hehe");
+            let gif = document.getElementById("gif");
+            let right = document.getElementById("right");
+            hehe.style.display = "block";
+            gif.style.display = "block";
+            right.style.display = "block";
+        }
+        
+        function erasesecond(){
+            let index = 0;
+            let elementstohidefirst = ["askcover", "clickcover", "propercover", "letter", "heart"];
+            
+            function hide(){
+                if (index < elementstohidefirst.length){
+                    let element = document.getElementById(elementstohidefirst[index]);
+                    if (element){
+                        element.style.display = "none";
+                    } else{
+                        askingvday();
+                    }
+                    index++
+                    setTimeout(hide, 1000);
+                }
+            }
+            hide()
+        }   
+
+        let minus = 0;
+        let specialindex = 0;
+        function askyes(){
+
+            specialindex++;
+            
+            minus += .1;
+            if (minus == 0){
+                document.getElementById("askno").style.display = "none"
+            };
+            let increment = 1;
+            let space = 100;
+            space += 100 * specialindex;
+            increment += 2 * specialindex;
+            document.getElementById("askno").style.transform = "scale(" + (1 - minus) + ")"
+            document.getElementById("askyes").style.transform = "scale(" + increment + ")";
+            document.getElementById("askyes").style.marginRight = space + "px";
+        }
+
+
+
+        
+        function erasefirst(){
+            let index = 0;
+            let elementstohidefirst = ["clickcover", "propercover", "letter", "heart"];
+            
+            function hide(){
+                if (index < elementstohidefirst.length){
+                    let element = document.getElementById(elementstohidefirst[index]);
+                    if (element){
+                        element.style.display = "none";
+                    } else{
+                        askingvday();
+                    }
+                    index++
+                    setTimeout(hide, 1000);
+                }
+            }
+            hide()
+        }   
+
+        function askingvday(){
+            document.getElementById("askno").style.display = "inline";
+            document.getElementById("askyes").style.display = "inline";
+            let text = "Can I be your valentine 👉 👈";
+            let ask = document.getElementById("ask");
+            let index = 0;
+            let words = text.split(" ")
+            askingvalentineproper();
+            function askingvalentineproper(){
+                if(index < words.length){
+                    ask.innerHTML += words[index] + " ";
+                    index++;
+                    setTimeout(askingvalentineproper, 500);
+                }
+            }
+        }
+
+        function Ltrdown(){
+            let intrval;
+            let bot = document.getElementById("bot");
+            let full = document.getElementById("ltrfull");
+            let heart = document.getElementById("heart")
+            let pos = 0;
+            windowHeight = window.innerHeight
+            clearInterval(intrval);
+            intrval = setInterval(movedown, 5);
+            function movedown(){
+                if (pos == windowHeight-400){
+                    clearInterval(intrval);
+                    setTimeout(Del, 1000);
+                    function Del(){
+                        document.getElementById("ltrfull").style.display = "none";
+                        document.getElementById("bot").style.display = "none";
+                    }
+                } else{
+                    heart.remove();
+                    pos++;
+                    bot.style.marginTop = pos + "px"
+                    full.style.marginTop = pos + "px"
+                }
+            }
+        }
+        
+        function typewriter(text, speed){
+            let index = 0;
+            let element = document.getElementById("ltrproper")
+
+            function type(){
+                if (index < text.length){
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, speed);
+                } else{
+                    element.style.borderRight = "none"
+                    document.getElementById("clickfirst").style.display = "inline"
+                    document.getElementById("herefirst").style.display = "inline"
+                }
+            }
+            type()
+        }
+
+        function start(){
+            typewriter("I love you my good girl, at the time u first read this, we would have been 110 days together. I really can't believe how we went from hating each other, becoming friends, becoming best friends, becoming number ones, and becoming a thing. It has been 86 days since ur parents imposed the setup. I do not regret a thing. I don't regret becoming friends with you, I do not regret becoming best friends with you, I do not regret liking you, and I will never regret waiting for you my love. I'm a pt guy so after every sentence, imagine i binked u. I want to spend my whole life with you yvaine, we became friends when I was very low and thought that my life had no meaning. Wifey, u changed that perspective and I love you for that because now I have a chance of telling my vows while I am in front of you. You literally and figuratively gave me meaning to my life. You changed my perspective from caring only about myself to caring only about you. My priorities would forever be God, you, me, my pretty girl. If there is a God, the first thing I would thank it for is that the God gave you(GOD GAVE ME YOUUUUU[aldub song ok n e way]). I thought it was not true before, but now i know the feeling of not knowing how to fully express my love for you because it's so big(Like dino rorrrrr). From volunteering to become ur driver when we're in college to being the driver of our kids when we're in marriage. Our love story is really so peculiar and I'm so happy because the first and only girl that I will be in a relationship with will be my girl in marriage. Normally, I do not like writing letters, nor going to vc, nor waiting for someone, nor being the first person to initiate, but you are an exception to all of those baby. You're all mine, sweetheart and we both know that I love you more. I love you forever and always", 70)
+        }
+
+        function ltr(){
+            let ltr = document.getElementById("ltrfirst");
+            ltr.id = "newLtr";
+            let newLtr = document.getElementById("newLtr");
+            setTimeout(Perm, 1500)
+            function Perm(){
+            newLtr.style.transform = "scale(3.5)";
+            start()
+            }
+        }
+    </script>
+
+</body>
+</html> 
